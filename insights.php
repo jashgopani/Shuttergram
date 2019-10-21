@@ -5,6 +5,9 @@
     
     $username = $_SESSION['username'];
 
+    //echo "DEVlali69"
+    //comment in php
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
