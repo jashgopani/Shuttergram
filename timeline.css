@@ -3,12 +3,13 @@
     height: 3vw;
     border-radius: 200px;
     border: 1px solid black;
+    box-shdow: 1px 1px #888;
     padding: 3px;
     margin: 0;
 }
 
 .postTitle{
-    position: relative;
+    position: absolute;
     left: 4vw;
 }
 
@@ -20,7 +21,7 @@ a.username{
     color: black;
     font-weight: 800;
     text-decoration: none;
-    text-decoration-color: black;
+    text-decoration-color: #444;
 }
 
 a.username :hover{
