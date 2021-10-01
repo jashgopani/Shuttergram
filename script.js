@@ -47,3 +47,30 @@ $(document).ready(function(){
     });
 
 }); 
+
+const sort = require('./sort');
+const sorted = [1,2,3,4,4,5,6,7,8];
+const reverseSorted = [9,8,7,6,5,4,4,3,2,1];
+const unsorted = [9,2,5,3,4,1,6,4,7,8];
+const cases = {sorted,reverseSorted,unsorted};
+const results = {};
+//forEach sorting method, run all the cases
+Object.keys(sort).forEach(algo=>{
+	results[algo] = {};
+	Object.keys(cases).forEach(caseName=>{
+		const c1 = sort[algo](cases[caseName]);
+		// console.log(c1)
+		results[algo][caseName] = {
+			"n":c1.n,
+			"comparisons":c1.compareCount,
+			"sortedArray":[...c1.arr]
+		}
+		console.log(algo,caseName,c1);
+		// results[algo][caseName]["n"]=c1.n;
+		// results[algo][caseName]["comparisons"] = c1.compareCount;
+	});
+})
+
+// console.log((results))
+
+
