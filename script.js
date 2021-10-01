@@ -42,6 +42,7 @@ $(document).ready(function(){
             $(this).addClass("far");
             $(this).css("color","#444");
         }
+        console.log("hft21");
         
     });
 
